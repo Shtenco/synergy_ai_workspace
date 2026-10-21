@@ -1,0 +1,24 @@
+name: RC Source Validation
+on:
+  push:
+    branches: [release/v1.0-desktop-rc]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify original SMM pages
+        run: python scripts/verify_upstream.py
+      - name: Declare desktop release gate
+        shell: bash
+        run: |
+          if [ ! -f desktop/package.json ] || [ ! -f desktop/src-tauri/tauri.conf.json ]; then
+            echo "::warning::Complete V0.9 desktop source tree not yet uploaded. No Windows installer can be claimed."
+          fi
