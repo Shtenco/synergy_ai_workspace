@@ -1,0 +1,11 @@
+class AvitoError(Exception): pass
+class AuthError(AvitoError): pass
+class PermissionError(AvitoError): pass
+class RateLimitError(AvitoError): pass
+class ValidationError(AvitoError): pass
+class NotFoundError(AvitoError): pass
+class ConflictError(AvitoError): pass
+class TransientAvitoError(AvitoError): pass
+class PermanentAvitoError(AvitoError): pass
+class CapabilityUnavailableError(AvitoError): pass
+class DatabaseIntegrityError(Exception): pass

@@ -1,0 +1,1 @@
+"""Diagnostics page module."""

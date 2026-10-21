@@ -1,0 +1,9 @@
+[project]
+name = "avito-ai-combine"
+version = "1.0.0"
+requires-python = ">=3.11"
+dependencies = ["cryptography>=42", "customtkinter>=5.2"]
+[project.scripts]
+avito-ai-combine = "avito_ai_combine.main:main"
+[tool.pytest.ini_options]
+testpaths = ["avito_ai_combine/tests"]
