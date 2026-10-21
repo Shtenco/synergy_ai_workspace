@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "OPEN AUTOPILOT",
+  "version": "0.1.0",
+  "identifier": "com.openautopilot.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "OPEN AUTOPILOT",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 1000,
+        "minHeight": 700,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; connect-src ipc: http://ipc.localhost; img-src 'self' asset: http://asset.localhost; style-src 'self' 'unsafe-inline'; script-src 'self'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "DeveloperTool",
+    "shortDescription": "Local-first autonomous AI engineering workstation",
+    "longDescription": "OPEN AUTOPILOT coordinates policy-governed coding agents, verification and local runtimes from a Windows-first command center."
+  }
+}
