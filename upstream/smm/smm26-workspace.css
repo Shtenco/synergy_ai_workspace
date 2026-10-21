@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+/* SYNERGY SMM native workspace 2026: dedicated, no legacy theme imports. */
+:root{--sbg:#f5faf6;--swhite:#fff;--sink:#183622;--smuted:#6d8674;--smuted2:#476c54;--sline:#dce9e0;--sgreen:#0a9651;--sdark:#112f20;--smint:#eaf8ef;--sgold:#ba9b53;--sshadow:0 16px 44px rgba(16,63,29,.05)}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--sbg);color:var(--sink);font:14px/1.7 'DM Sans',Manrope,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:wait}[hidden]{display:none!important}::selection{background:#c4efcf}h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{font-family:Manrope,sans-serif;letter-spacing:-.057em;line-height:1.16}h1{font-weight:800}h2{font-weight:800}h3{font-weight:800}em,i.accent{font-style:normal;color:var(--sgreen)}:focus-visible{outline:3px solid #69cb91;outline-offset:3px}
+.syn26-hub .wrap{width:min(1230px,calc(100% - 64px));margin:auto}
+.syn26-hub .top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.95);border-bottom:1px solid var(--sline);backdrop-filter:blur(18px)}
+.syn26-hub .bar{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:82px}
+.syn26-hub .brand,.syn26-studio .brand,.syn26-pro .mark,.syn26-caseflow .side-brand{display:flex;align-items:center;gap:11px;font:800 20px Manrope,sans-serif;letter-spacing:-.06em}
+.syn26-hub .brand img,.syn26-studio .brand img,.syn26-pro .mark img,.syn26-caseflow .side-brand img{width:46px;height:46px;object-fit:contain;flex:none}
+.syn26-hub .brand small,.syn26-studio .brand small,.syn26-pro .mark small,.syn26-caseflow .side-brand small{font:800 9px Manrope,sans-serif;letter-spacing:.12em;color:#19864e;display:block;margin-top:5px}
+.syn26-hub .bar nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.syn26-hub .bar nav a{color:#58715f;font:750 11px Manrope,sans-serif}
+.syn26-hub .bar nav a[aria-current=page],.syn26-hub .bar nav a:hover{color:#0a9750}
+.syn26-hub .hub-hero{background:radial-gradient(circle at 85% 22%,#dff5e6,transparent 52%),linear-gradient(150deg,#fff,#f4faf6);border-bottom:1px solid var(--sline);padding:70px 0 67px}
+.syn26-hub .hub-hero-grid{display:grid;grid-template-columns:minmax(0,1.14fr) minmax(280px,.86fr);align-items:center;gap:45px}
+.syn26-hub .overline,.syn26-studio .eyebrow,.syn26-studio .page-kicker,.syn26-pro .eyebrow,.syn26-caseflow .eyebrow,.syn26-hub .hub-kicker{font:800 10px Manrope,sans-serif;letter-spacing:.13em;color:#0c8f4c;text-transform:uppercase}
+.syn26-hub h1{font:800 clamp(46px,5.2vw,75px)/1.08 Manrope,sans-serif;letter-spacing:-.075em;margin:18px 0 22px}
+.syn26-hub h1 i{font-style:normal;color:#0c9852}
+.syn26-hub .intro{max-width:700px;color:#607b66;line-height:1.83;font-size:15px}
+.syn26-hub .pillrow{display:flex;gap:8px;flex-wrap:wrap;margin:25px 0}
+.syn26-hub .pill{border:1px solid #d4e8d9;background:#fff;color:#377349;border-radius:99px;padding:8px 12px;font-size:10px;font-weight:800}
+.syn26-hub .hub-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.syn26-hub .primary,.syn26-hub .secondary{padding:13px 18px;border-radius:11px;display:inline-flex;align-items:center;font:800 12px Manrope,sans-serif;border:1px solid #d7e7dd}
+.syn26-hub .primary{background:var(--sgreen);border-color:var(--sgreen);color:#fff}.syn26-hub .secondary{background:#fff;color:#216c40}.syn26-hub .primary:hover{background:#08753f}
+.syn26-hub .hub-visual{background:#112f20;padding:27px;border-radius:23px;min-height:324px;display:flex;flex-direction:column;justify-content:space-between;color:#eaf8ef}
+.syn26-hub .hub-visual-head{display:flex;align-items:center;justify-content:space-between;gap:15px;font:800 12px Manrope,sans-serif}
+.syn26-hub .hub-visual-head small{color:#a8d7b6;font-size:9px}
+.syn26-hub .hub-visual-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:24px 0}
+.syn26-hub .hub-visual-grid span{border:1px solid #38684a;background:#214b33;border-radius:12px;padding:19px;font:800 12px Manrope,sans-serif}
+.syn26-hub .hub-visual-grid b{display:block;color:#9be2b0;font-size:10px;margin-bottom:10px}
+.syn26-hub .hub-visual-note{border-top:1px solid #3b6a4b;padding-top:13px;color:#b0ceb8;font-size:10px}
+.syn26-hub .notice{background:#eef8f1;border:1px solid #d5ebda;border-radius:14px;padding:19px 24px;margin:26px 0;color:#55745e}
+.syn26-hub .notice p{margin:0;font-size:12px;line-height:1.75}
+.syn26-hub .subhead{display:flex;justify-content:space-between;align-items:end;gap:25px;margin:43px 0 23px}
+.syn26-hub .subhead h2{font:800 clamp(30px,3.4vw,43px)/1.15 Manrope,sans-serif;letter-spacing:-.06em;margin:7px 0 0}
+.syn26-hub .s93-mission{padding:26px;background:#fff;border:1px solid var(--sline);border-radius:20px;box-shadow:var(--sshadow)}
+.syn26-hub .s93-heading{display:flex;gap:17px;align-items:center;justify-content:space-between}
+.syn26-hub .s93-heading h2{font:800 22px Manrope,sans-serif;letter-spacing:-.055em;margin:7px 0}
+.syn26-hub .s93-heading p{color:#728676;font-size:12px;margin:0;max-width:690px}
+.syn26-hub .s93-refresh{padding:12px 16px;border-radius:11px;border:1px solid #d0e7d7;color:#177846;background:#f4fbf5;font-weight:800;font-size:11px;white-space:nowrap}
+.syn26-hub .s93-status{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:22px 0}
+.syn26-hub .s93-metric{padding:19px;border:1px solid #e0ece3;border-radius:14px;background:#f9fcfa;min-width:0}
+.syn26-hub .s93-metric small{font:800 10px Manrope,sans-serif;color:#82998a}
+.syn26-hub .s93-metric strong{font:800 16px Manrope,sans-serif;display:block;margin:16px 0 8px;overflow-wrap:anywhere}
+.syn26-hub .s93-metric p{font-size:11px;color:#7a907e;margin:0}
+.syn26-hub .s93-metric[data-state=ok] strong{color:#0a9450}
+.syn26-hub .s93-actions{display:flex;gap:9px;flex-wrap:wrap}
+.syn26-hub .s93-actions a{padding:11px 13px;border-radius:10px;border:1px solid var(--sline);font-size:11px;color:#236d41;font-weight:800}
+.syn26-hub .s93-actions a span{color:#179b57}
+.syn26-hub .s93-note{font-size:10px;color:#829387;margin:17px 0 0}
+.syn26-hub .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:24px 0 60px}
+.syn26-hub .tile{display:flex;flex-direction:column;padding:27px;border:1px solid var(--sline);border-radius:17px;background:#fff;min-height:218px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.syn26-hub .tile:hover{transform:translateY(-3px);border-color:#addbb8;box-shadow:var(--sshadow)}
+.syn26-hub .tile small{font:800 10px Manrope,sans-serif;color:#0c9150}
+.syn26-hub .tile h3{font:800 21px Manrope,sans-serif;letter-spacing:-.055em;margin:23px 0 10px}
+.syn26-hub .tile p{font-size:12px;color:#728776;line-height:1.75;margin:0 0 13px}
+.syn26-hub .tile .status{color:#ac8b4c;font-size:10px;font-weight:800;margin-bottom:12px}
+.syn26-hub .tile a{display:inline-flex;margin-top:auto;align-items:center;gap:10px;font-size:11px;font-weight:800;color:#0b8950}
+.syn26-hub .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-bottom:50px}
+.syn26-hub .step{background:#fff;border:1px solid var(--sline);padding:23px;border-radius:15px}
+.syn26-hub .step h3{font:800 17px Manrope,sans-serif}.syn26-hub .step p{color:#718a78;font-size:12px}
+.syn26-hub .back{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--sline);padding:25px 0;color:#477754;font-size:12px}
+.syn26-hub .back a{font-weight:800}
+/* Shared editorial shell: Studio. */
+.syn26-studio .app{display:grid;grid-template-columns:255px minmax(0,1fr);min-height:100vh}
+.syn26-studio .sidebar{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:10px;padding:27px 17px;background:var(--sdark);color:#f0f9f2;overflow:auto}
+.syn26-studio .brand{padding:0 8px 20px;color:white}.syn26-studio .brand small{color:#a5e3b9}
+.syn26-studio .side-label{font:800 10px Manrope,sans-serif;color:#a0c4aa;letter-spacing:.1em;margin:19px 13px 4px}
+.syn26-studio .nav-link{display:flex;align-items:center;gap:12px;background:transparent;border:0;color:#c6decf;border-radius:11px;text-align:left;padding:12px 13px;font-size:12px;font-weight:750;margin:2px 0;width:100%}
+.syn26-studio .nav-link span{color:#9fceb0;font-size:17px;min-width:20px;text-align:center}
+.syn26-studio .nav-link:hover{background:#23513a;color:#fff}
+.syn26-studio .nav-link.active{background:#0d9752;color:white}.syn26-studio .nav-link.active span{color:white}
+.syn26-studio .more-links{display:grid;gap:4px}.syn26-studio .more-links a{color:#bdd6c4;padding:9px 13px;font-size:11px}.syn26-studio .more-links a:hover{color:#fff}
+.syn26-studio .sidebar-bottom{margin-top:auto;border:1px solid #376045;background:#1a422d;border-radius:13px;padding:16px;display:flex;gap:9px;color:#e9f5eb;font-size:11px}.syn26-studio .sidebar-bottom small{color:#b0cfba}.syn26-studio .tiny-green{width:7px;height:7px;flex:none;border-radius:50%;background:#35c878;margin-top:5px}
+.syn26-studio .main{min-width:0;background:var(--sbg)}
+.syn26-studio .topbar,.syn26-pro .topbar,.syn26-caseflow .main-top{min-height:75px;background:#fff;border-bottom:1px solid var(--sline);display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px clamp(20px,3.2vw,54px)}
+.syn26-studio .breadcrumb,.syn26-pro .breadcrumb,.syn26-caseflow .crumb{color:#708777;font:800 11px Manrope,sans-serif}.syn26-studio .breadcrumb i{color:#14844a;margin:0 5px}.syn26-studio .top-actions{display:flex;gap:13px;align-items:center;flex-wrap:wrap}
+.syn26-studio .status,.syn26-pro .session,.syn26-caseflow .api-state{display:inline-flex;gap:7px;align-items:center;padding:8px 11px;background:#faf7ec;border:1px solid #e9e1c9;border-radius:99px;font:800 10px Manrope,sans-serif;color:#977543}
+.syn26-studio .status-ok,.syn26-pro .session.ok,.syn26-caseflow .api-state.ok{background:#e9f8ed;border-color:#cce8d5;color:#147e43}
+.syn26-studio .top-pro{font:800 11px Manrope,sans-serif;color:#0e8449}
+.syn26-studio .menu-btn{display:none;border:1px solid #d5e6da;border-radius:10px;background:white;color:#116f41;padding:9px}
+.syn26-studio .main-content{padding:30px clamp(20px,3.2vw,54px) 70px;max-width:1500px;margin:auto}
+.syn26-studio .auth-box,.syn26-pro .loginbox,.syn26-caseflow .auth-panel{border:1px solid #d9e8dd;background:#fff;padding:22px;border-radius:16px;display:flex;gap:20px;align-items:center;justify-content:space-between;margin-bottom:18px}
+.syn26-studio .auth-box p,.syn26-pro .loginbox p,.syn26-caseflow .auth-panel p{color:#738775;font-size:12px;margin:8px 0}
+.syn26-studio .auth-box form,.syn26-pro .loginbox form,.syn26-caseflow .auth-panel form{display:flex;align-items:end;flex-wrap:wrap;gap:9px}
+.syn26-studio .auth-box label,.syn26-pro .loginbox label,.syn26-caseflow .auth-panel label{font-size:11px;font-weight:800;color:#42694f}
+.syn26-studio .auth-box input,.syn26-pro .field,.syn26-caseflow input,.syn26-caseflow select,.syn26-caseflow textarea{border:1px solid #cbdfd1;background:#fff;color:#1c3d27;border-radius:10px;padding:12px;max-width:100%;min-width:0}
+.syn26-studio .btn,.syn26-pro .btn,.syn26-caseflow .primary,.syn26-caseflow .secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid #d2e4d7;border-radius:11px;background:white;color:#1c7042;padding:12px 16px;font:800 11px Manrope,sans-serif}
+.syn26-studio .btn-primary,.syn26-pro .btn:not(.secondary):not(.tertiary),.syn26-caseflow .primary{background:var(--sgreen);border-color:var(--sgreen);color:white}
+.syn26-studio .page{display:none}.syn26-studio .page.active{display:block}
+.syn26-studio .hero{display:block;padding:clamp(27px,3.8vw,48px);background:radial-gradient(circle at 92% 18%,#e4f7e8,transparent 50%),#fff;border:1px solid var(--sline);border-radius:23px;margin-bottom:24px}
+.syn26-studio .hero h1{font:800 clamp(34px,4vw,58px)/1.12 Manrope,sans-serif;letter-spacing:-.071em;margin:17px 0}
+.syn26-studio .hero .eyebrow{color:#0e9952}.syn26-studio .hero p{color:#688270;font-size:13px;max-width:680px;line-height:1.8}
+.syn26-studio .hero-graphic{display:flex;flex-wrap:wrap;gap:9px;margin-top:27px}.syn26-studio .hero-graphic span{padding:10px 13px;border:1px solid #d7e9de;border-radius:99px;background:#f9fdfa;color:#3f7150;font-size:10px;font-weight:800}
+.syn26-studio .section-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin:22px 0}.syn26-studio .section-heading h2{font:800 26px Manrope,sans-serif;letter-spacing:-.055em;margin:8px 0}.syn26-studio .section-heading small{color:#0b8f4b;font-size:10px;font-weight:800}.syn26-studio .section-heading p{color:#748776;font-size:12px;max-width:500px}
+.syn26-studio .quick-grid,.syn26-studio .catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.syn26-studio .quick,.syn26-studio .catalog-card{display:flex;flex-direction:column;gap:11px;min-height:194px;background:#fff;border:1px solid var(--sline);border-radius:16px;padding:23px;text-align:left;color:var(--sink)}.syn26-studio .quick:hover,.syn26-studio .catalog-card:hover{border-color:#9bd4ae;transform:translateY(-2px);box-shadow:var(--sshadow)}
+.syn26-studio .quick span{font-size:10px;color:#0b944e;font-weight:800}.syn26-studio .quick b{font:800 18px Manrope,sans-serif;letter-spacing:-.04em}.syn26-studio .quick p{font-size:12px;color:#708577;line-height:1.7}.syn26-studio .quick i{font-style:normal;color:#0a8e4b;font-size:11px;font-weight:800;margin-top:auto}
+.syn26-studio .page-kicker{margin:0 0 8px}.syn26-studio .page h1:not(.hero h1){font:800 clamp(31px,3.6vw,45px) Manrope,sans-serif;letter-spacing:-.064em}
+.syn26-studio .page-desc{color:#748a78;max-width:720px;line-height:1.8}
+.syn26-studio .task-card{background:#fff;border:1px solid var(--sline);border-radius:17px;padding:clamp(21px,3vw,31px);margin:20px 0}.syn26-studio .task-card h3{font-size:20px}.syn26-studio .task-card p{color:#768a7a;font-size:12px}
+.syn26-studio .field-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:17px}.syn26-studio .task-card label{color:#3e6750;font-size:11px;font-weight:800}
+.syn26-studio .task-card input,.syn26-studio .task-card textarea,.syn26-studio .task-card select,.syn26-studio .search-field input{display:block;border:1px solid #d0e3d6;border-radius:10px;background:#fff;color:#1a3e28;padding:12px;max-width:100%;min-width:0;width:100%}
+.syn26-studio .form-footer{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-top:17px}.syn26-studio .output{border:1px solid #d9e8df;background:#f9fcfa;padding:19px;border-radius:12px;color:#4b6c55;margin-top:18px;overflow-wrap:anywhere}
+.syn26-studio .result-row{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid var(--sline);padding:12px 0}.syn26-studio .pill{border-radius:99px;color:#0b8a48;background:#e7f7eb;padding:5px 10px;white-space:nowrap}
+.syn26-studio .notice{border-radius:13px;background:#eef9f1;border:1px solid #d1e8d8;padding:16px 20px;color:#4c7358;margin:15px 0}
+.syn26-studio .footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--sline);padding:25px 0;color:#879a8b;font-size:11px}
+.syn26-studio #toast{position:fixed;bottom:20px;right:20px;z-index:99;padding:16px 22px;background:#153722;color:white;border-radius:13px;display:none;max-width:400px;box-shadow:var(--sshadow)}.syn26-studio #toast.visible{display:block}
+/* Shared operator shell: Lead Radar + AI Studio. */
+.syn26-pro .layout{display:grid;grid-template-columns:252px minmax(0,1fr);min-height:100vh}
+.syn26-pro .rail{position:sticky;top:0;height:100vh;overflow:auto;background:var(--sdark);padding:27px 17px;color:#e4f7eb;display:flex;flex-direction:column}
+.syn26-pro .mark{padding:0 9px 22px;color:#fff}.syn26-pro .mark small{color:#a2ddba}
+.syn26-pro .rail-label{color:#a1c5ac;padding:15px 11px 10px;font:800 10px Manrope,sans-serif;letter-spacing:.11em}
+.syn26-pro .rail nav{display:grid;gap:4px}.syn26-pro .rail nav a{display:flex;align-items:center;gap:11px;padding:12px 13px;color:#bed9c6;font-size:12px;border-radius:11px}
+.syn26-pro .rail nav a:hover{background:#245039;color:#fff}.syn26-pro .rail nav a[aria-current]{background:#0e9550;color:#fff}.syn26-pro .nav-num{font:800 10px Manrope,sans-serif;color:#9bdfaf}
+.syn26-pro .rail-callout{margin-top:auto;background:#1c422e;border:1px solid #3e6b4c;border-radius:13px;padding:17px}.syn26-pro .rail-callout strong{font-size:11px;color:#d8f9e3}.syn26-pro .rail-callout p{font-size:11px;color:#b7d1bf;line-height:1.7;margin:7px 0 0}
+.syn26-pro .main{min-width:0}.syn26-pro .breadcrumb b{color:#0b9250}
+.syn26-pro .content{padding:29px clamp(20px,3.2vw,53px) 70px;max-width:1480px;margin:auto}
+.syn26-pro .hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(190px,.55fr);gap:17px;align-items:center;padding:clamp(26px,3vw,42px);border:1px solid var(--sline);background:radial-gradient(circle at 88% 20%,#e4f5e9,transparent 52%),#fff;border-radius:21px;margin-bottom:21px}
+.syn26-pro .hero h1{font:800 clamp(32px,3.4vw,49px)/1.1 Manrope,sans-serif;letter-spacing:-.066em;margin:14px 0}.syn26-pro .hero em{font-style:normal;color:#0b9550}.syn26-pro .hero p{font-size:12px;color:#6a8271;line-height:1.8;max-width:750px}
+.syn26-pro .chip-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}.syn26-pro .chip{font:800 9px Manrope,sans-serif;color:#287e4c;background:#f8fcf8;border:1px solid #d4e8da;padding:7px 10px;border-radius:99px}
+.syn26-pro .stamp{border:1px solid #d6e9da;background:#f5faf6;border-radius:15px;padding:23px;min-width:0;text-align:left}.syn26-pro .stamp .stat-number{display:block;font:800 50px Manrope,sans-serif;color:#0b9b55;letter-spacing:-.08em;margin:17px 0 8px}.syn26-pro .stamp p{font-size:10px;color:#628c6c;font-weight:800}
+.syn26-pro .section-h{display:flex;justify-content:space-between;align-items:end;gap:25px;margin:29px 0 19px}.syn26-pro .section-h h2{font:800 clamp(25px,2.7vw,37px) Manrope,sans-serif;letter-spacing:-.065em;margin:8px 0}.syn26-pro .section-h p{font-size:12px;color:#718979;max-width:540px}
+.syn26-pro .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}.syn26-pro .stat{padding:22px;background:#fff;border:1px solid var(--sline);border-radius:15px}.syn26-pro .stat b{font:800 25px Manrope,sans-serif;display:block;color:#18492d;letter-spacing:-.06em}.syn26-pro .stat span{color:#809584;font-size:10px;font-weight:800}
+.syn26-pro .workspace-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.syn26-pro .panel{background:#fff;border:1px solid var(--sline);border-radius:17px;padding:26px;min-width:0}.syn26-pro .panel.full{grid-column:1/-1}
+.syn26-pro .panel-top{display:flex;align-items:start;justify-content:space-between;gap:15px;margin-bottom:18px}.syn26-pro .panel-top h3{font:800 19px Manrope,sans-serif;letter-spacing:-.055em;margin:8px 0}.syn26-pro .panel-top p{font-size:12px;color:#718777;line-height:1.7;margin:0}.syn26-pro .tag{white-space:nowrap;border-radius:99px;color:#0a8449;border:1px solid #d2e8d8;background:#eaf8ee;padding:7px 10px;font-size:9px;font-weight:800}.syn26-pro .tag.amber{color:#936d34;background:#faf6e9;border-color:#eadcbd}
+.syn26-pro .label{display:block;color:#416d50;font-size:11px;font-weight:800;margin:15px 0 7px}.syn26-pro .field{display:block;width:100%;border:1px solid #cfe2d5;border-radius:10px;padding:12px;background:#fff;color:#1b3e28;min-width:0}.syn26-pro .textarea{min-height:128px;resize:vertical}.syn26-pro .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.syn26-pro .button-row{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:15px}
+.syn26-pro .btn.secondary,.syn26-pro .btn.tertiary{background:#fff;color:#236b41}
+.syn26-pro .helper{font-size:11px;color:#768b79;line-height:1.7}
+.syn26-pro .out{border:1px solid #dfebe2;background:#f7fbf8;border-radius:12px;padding:16px;color:#587363;overflow-wrap:anywhere;min-height:65px;margin-top:15px}
+.syn26-pro .out.error{color:#af4654;background:#fff4f3}.syn26-pro .out.ready{background:#f7fbf8}
+.syn26-pro .result-list{display:grid;gap:10px;margin-top:12px}.syn26-pro .result{border:1px solid var(--sline);background:#fff;padding:13px;border-radius:10px}.syn26-pro .result small{display:block;color:#708879}.syn26-pro .start-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0}.syn26-pro .step{background:#fff;border:1px solid var(--sline);padding:21px;border-radius:13px}.syn26-pro .step p{font-size:12px;color:#718575}
+.syn26-pro .footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;border-top:1px solid var(--sline);padding-top:22px;color:#859a88;font-size:11px;margin-top:35px}.syn26-pro .footer a{color:#118549;font-weight:800}
+/* CRM specific — native case management layout. */
+.syn26-caseflow .skip{position:absolute;top:-100px;left:12px;z-index:999;background:#0c9550;color:white;padding:10px}.syn26-caseflow .skip:focus{top:12px}
+.syn26-caseflow .case-shell{display:grid;grid-template-columns:254px minmax(0,1fr);min-height:100vh}
+.syn26-caseflow .sidebar{position:sticky;top:0;height:100vh;overflow:auto;background:var(--sdark);color:#f0faf3;padding:27px 18px;display:flex;flex-direction:column}
+.syn26-caseflow .side-brand{font-size:19px;color:white}.syn26-caseflow .side-brand small{color:#b0e0be}
+.syn26-caseflow .side-title{font:800 10px Manrope,sans-serif;letter-spacing:.11em;color:#9bc3a8;margin:29px 11px 9px}
+.syn26-caseflow .sidebar nav{display:grid;gap:4px}.syn26-caseflow .sidebar nav a{display:flex;gap:12px;align-items:center;padding:12px;color:#c4ddcc;border-radius:11px;font-size:12px;font-weight:700}
+.syn26-caseflow .sidebar nav a span{color:inherit}.syn26-caseflow .sidebar nav a:hover{background:#214a33}.syn26-caseflow .sidebar nav a[aria-current]{background:#0c9550;color:#fff}
+.syn26-caseflow .side-info{margin-top:auto;padding:18px;border:1px solid #3d6548;border-radius:13px;background:#1d432f}.syn26-caseflow .side-info .pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:#40d17d}.syn26-caseflow .side-info strong{color:#c4efd3;font-size:10px;letter-spacing:.1em}.syn26-caseflow .side-info p{color:#b9d5c2;font-size:11px;margin:9px 0 0}
+.syn26-caseflow .main{min-width:0}.syn26-caseflow .crumb strong{color:#0c8b49}
+.syn26-caseflow .page{padding:28px clamp(20px,3.2vw,54px) 65px;max-width:1650px;margin:auto}
+.syn26-caseflow .hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(180px,.6fr);gap:15px;padding:clamp(25px,3vw,40px);background:radial-gradient(circle at 85% 20%,#e3f7e9,transparent 53%),#fff;border:1px solid var(--sline);border-radius:21px}
+.syn26-caseflow .hero h1{font:800 clamp(33px,3.9vw,55px)/1.13 Manrope,sans-serif;letter-spacing:-.066em;margin:13px 0}.syn26-caseflow .hero em{font-style:normal;color:#0c9952}.syn26-caseflow .intro{color:#6d8673;font-size:13px;line-height:1.77;max-width:820px}
+.syn26-caseflow .tagline{display:flex;flex-wrap:wrap;gap:8px;margin-top:19px}.syn26-caseflow .tagline span{background:#f5fbf7;border:1px solid #d6e8dc;border-radius:99px;padding:7px 10px;color:#38754d;font-size:9px;font-weight:800}
+.syn26-caseflow .hero-visual{background:#143925;border-radius:16px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;padding:20px;min-height:190px}
+.syn26-caseflow .orbit{display:grid;place-items:center;width:100px;height:100px;border:1px dashed #52a874;border-radius:50%;background:#22543a}.syn26-caseflow .ring{display:none}.syn26-caseflow .core{font:800 50px Manrope,sans-serif;color:#bff1cd}.syn26-caseflow .hero-mark{font:800 10px Manrope,sans-serif;color:#b6dbbf;margin-top:16px}
+.syn26-caseflow .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:15px 0}
+.syn26-caseflow .stats article{background:#fff;border:1px solid var(--sline);border-radius:14px;padding:20px;min-width:0}
+.syn26-caseflow .stats small{color:#839889;font-size:10px}.syn26-caseflow .stats strong{display:block;font:800 24px Manrope,sans-serif;color:#1c492f;letter-spacing:-.06em;margin:12px 0 5px}
+.syn26-caseflow .stats span{font-size:11px;color:#809584}
+.syn26-caseflow .auth-panel h2{font:800 20px Manrope,sans-serif}.syn26-caseflow .auth-panel form{gap:10px}
+.syn26-caseflow .work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;align-items:start}
+.syn26-caseflow .panel{background:#fff;border:1px solid var(--sline);border-radius:17px;padding:24px;min-width:0}
+.syn26-caseflow .panel-heading{display:flex;justify-content:space-between;gap:15px;align-items:start;margin-bottom:17px}
+.syn26-caseflow .panel-heading h2{font:800 20px Manrope,sans-serif;letter-spacing:-.05em;margin:8px 0}
+.syn26-caseflow .description{color:#738676;font-size:12px;line-height:1.73}
+.syn26-caseflow .status-chip{padding:7px 10px;border-radius:99px;border:1px solid #d8e9dc;color:#16884b;background:#eef9f1;font-size:9px;font-weight:800;white-space:nowrap}
+.syn26-caseflow .field-stack{display:grid;gap:15px}.syn26-caseflow .field-stack label{display:grid;gap:7px;color:#416c50;font-size:11px;font-weight:800}
+.syn26-caseflow .form-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.syn26-caseflow .check{display:flex!important;align-items:start;gap:10px}
+.syn26-caseflow .actionbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.syn26-caseflow .feedback{color:#617f6b;font-size:12px;margin:10px 0}.syn26-caseflow .feedback.error{color:#b44557}.syn26-caseflow .feedback.good{color:#0a8f4d}
+.syn26-caseflow .filters{display:flex;gap:6px;flex-wrap:wrap}.syn26-caseflow .filter{background:#f7fbf8;border:1px solid #dce9df;color:#53795e;border-radius:9px;padding:10px 13px;font-size:11px;font-weight:800}.syn26-caseflow .filter.active{background:#0e9954;color:#fff}
+.syn26-caseflow .case-list{display:grid;gap:9px;min-height:80px;max-height:600px;overflow:auto}.syn26-caseflow .case-card{display:grid;gap:7px;width:100%;text-align:left;background:#f8fcf9;border:1px solid var(--sline);border-radius:12px;padding:14px;color:#234d30}
+.syn26-caseflow .case-card.selected,.syn26-caseflow .case-card:hover{background:#eef9f1;border-color:#75c891}
+.syn26-caseflow .case-card .small,.syn26-caseflow .case-card .meta{font-size:10px;color:#768d7d}
+.syn26-caseflow .empty{padding:27px;color:#809284;border:1px dashed #d1e2d5;border-radius:12px;font-size:12px}
+.syn26-caseflow .detail{grid-column:1/-1}.syn26-caseflow .detail-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.syn26-caseflow .case-detail{background:#f8fcf9;border:1px solid var(--sline);border-radius:12px;padding:18px;color:#315640;overflow-wrap:anywhere}
+.syn26-caseflow .review-form,.syn26-caseflow .draft-form{display:grid;gap:12px}
+.syn26-caseflow .audit-log{max-height:350px;overflow:auto;border-radius:12px;border:1px solid var(--sline);background:#f8fcf9;padding:15px}
+.syn26-caseflow .audit-item{border-bottom:1px solid var(--sline);padding:10px;font-size:11px}
+.syn26-caseflow .footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;border-top:1px solid var(--sline);padding-top:23px;margin-top:32px;font-size:11px;color:#829788}.syn26-caseflow .footer a{color:#0b874a;font-weight:800}
+@media(max-width:1180px){.syn26-hub .bar nav{gap:12px}.syn26-pro .workspace-grid,.syn26-caseflow .work-grid{grid-template-columns:1fr}.syn26-caseflow .detail{grid-column:auto}.syn26-studio .quick-grid,.syn26-studio .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:950px){.syn26-hub .hub-hero-grid{grid-template-columns:1fr}.syn26-hub .hub-visual{display:none}.syn26-hub .s93-status{grid-template-columns:repeat(2,minmax(0,1fr))}.syn26-hub .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+.syn26-studio .app,.syn26-pro .layout,.syn26-caseflow .case-shell{grid-template-columns:1fr}
+.syn26-studio .sidebar,.syn26-pro .rail,.syn26-caseflow .sidebar{position:relative;height:auto;padding:14px 16px;display:block}
+.syn26-studio .sidebar .brand,.syn26-pro .rail .mark,.syn26-caseflow .side-brand{padding:0 0 8px}
+.syn26-studio .side-label,.syn26-studio .more-links,.syn26-studio .sidebar-bottom,.syn26-pro .rail-label,.syn26-pro .rail-callout,.syn26-caseflow .side-title,.syn26-caseflow .side-info{display:none}
+.syn26-studio .sidebar nav,.syn26-pro .rail nav,.syn26-caseflow .sidebar nav{display:flex;gap:6px;overflow-x:auto;padding:7px 0}
+.syn26-studio .nav-link,.syn26-pro .rail nav a,.syn26-caseflow .sidebar nav a{white-space:nowrap;width:auto;flex:none}
+.syn26-studio .menu-btn{display:none}.syn26-pro .stats,.syn26-caseflow .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:660px){.syn26-hub .wrap{width:calc(100% - 30px)}.syn26-hub .bar{display:block;padding:15px 0}.syn26-hub .bar nav{flex-wrap:nowrap;overflow-x:auto;margin-top:12px;padding-bottom:8px;gap:17px}.syn26-hub .bar nav a{white-space:nowrap}
+.syn26-hub .hub-hero{padding:40px 0}.syn26-hub h1{font-size:41px}.syn26-hub .s93-heading,.syn26-hub .subhead{display:block}.syn26-hub .s93-refresh{margin-top:15px}.syn26-hub .tiles,.syn26-hub .steps{grid-template-columns:1fr}.syn26-hub .s93-mission{padding:17px}.syn26-hub .s93-status{gap:7px}.syn26-hub .s93-metric{padding:13px}
+.syn26-studio .topbar,.syn26-pro .topbar,.syn26-caseflow .main-top{padding:13px 14px;flex-wrap:wrap}.syn26-studio .main-content,.syn26-pro .content,.syn26-caseflow .page{padding:19px 14px 50px}
+.syn26-studio .hero,.syn26-pro .hero,.syn26-caseflow .hero{padding:22px}.syn26-studio .hero h1,.syn26-pro .hero h1,.syn26-caseflow .hero h1{font-size:35px}
+.syn26-studio .quick-grid,.syn26-studio .catalog-grid,.syn26-studio .field-row,.syn26-pro .workspace-grid,.syn26-pro .cols,.syn26-pro .start-steps,.syn26-caseflow .work-grid,.syn26-caseflow .form-two,.syn26-caseflow .detail-cols{grid-template-columns:1fr}
+.syn26-studio .section-heading,.syn26-pro .section-h,.syn26-caseflow .panel-heading{display:block}.syn26-pro .hero{grid-template-columns:1fr}.syn26-pro .stamp,.syn26-caseflow .hero-visual{display:none}
+.syn26-studio .auth-box,.syn26-pro .loginbox,.syn26-caseflow .auth-panel{display:block;padding:17px}.syn26-studio .auth-box form,.syn26-pro .loginbox form,.syn26-caseflow .auth-panel form{margin-top:12px}
+.syn26-caseflow .stats{gap:7px}.syn26-caseflow .stats article{padding:13px}.syn26-caseflow .stats strong{font-size:20px}.syn26-caseflow .panel,.syn26-pro .panel,.syn26-studio .task-card{padding:18px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
