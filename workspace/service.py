@@ -122,6 +122,14 @@ class Handler(BaseHTTPRequestHandler):
   if p=='/v1/sources':
    from workspace.provider_runtime import source_manifest
    return self.send(200,source_manifest())
+  if p=='/v1/capital/summary':
+   from workspace import capital_engine
+   query=urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
+   try:return self.send(200,capital_engine.summary(query['currency'][0],query['start'][0],query['end'][0]))
+   except (KeyError,IndexError,ValueError):return self.send(400,{'error':'invalid capital query'})
+  if p=='/v1/orchestration/capabilities':
+   from workspace import meta_orchestrator
+   return self.send(200,meta_orchestrator.list_capabilities())
   for table in ('tasks','leads','audit','actions'):
    if p=='/v1/'+table:return self.send(200,{'items':list_data(table)})
   self.send(404,{'error':'not_found'})
@@ -135,6 +143,16 @@ class Handler(BaseHTTPRequestHandler):
    if p.startswith('/v1/actions/') and p.endswith('/provider-dry-run'):
     from workspace.provider_runtime import dry_run_dispatch
     return self.send(200,dry_run_dispatch(int(p.split('/')[3]),obj.get('provider'),obj.get('operator'),obj.get('request_id')))
+   if p=='/v1/capital/import':
+    from workspace import capital_engine
+    return self.send(201,capital_engine.import_entries(obj))
+   if p=='/v1/capital/allocate/plan':
+    from workspace import capital_engine
+    return self.send(201,capital_engine.allocation_plan(obj.get('currency'),obj.get('start'),obj.get('end'),obj.get('reserve_pct'),obj.get('investment_pct'),obj.get('minimum_buffer','0')))
+   if p=='/v1/orchestration/run':
+    from workspace import meta_orchestrator
+    try:return self.send(200,meta_orchestrator.run(obj.get('steps')))
+    except PermissionError:return self.send(403,{'error':'CAPABILITY_DENIED'})
    if p=='/v1/avito/score':
     result=adapters.avito_score(obj);
     with LOCK,connect() as db:emit(db,'avito.score','local',{'value':result['value']})
