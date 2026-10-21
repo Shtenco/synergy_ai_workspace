@@ -22,3 +22,6 @@ Original content preserved via GitHub content API. Git blob SHAs at time of impo
 - Live OAuth and authorized provider writes are NOT configured or verified.
 
 Do not mark these as completed or publish a production installer until evidence exists.
+
+## Additional progress (2026-10-22)
+Original SMM dependencies added without re-authoring: `smm26-workspace.css`, `mission-v93.js`, `studio.js`, `workspace-pro.js`, `caseflow.js`, and `assets/pages-runtime.js`. Validation script checks the four source HTML pages and all six dependencies. Local V0.9 archive Python tests: 25/25 PASS. GitHub source-validation workflow runs still fail; cause is not confirmed because CI job logs could not be retrieved. GitHub does not yet contain the full local V0.9 source tree. No Windows build or native GUI E2E evidence exists.
