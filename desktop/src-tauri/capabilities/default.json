@@ -1,0 +1,1 @@
+{"identifier":"default","description":"App window only; no shell or filesystem privileges","windows":["main"],"permissions":["core:default"]}
