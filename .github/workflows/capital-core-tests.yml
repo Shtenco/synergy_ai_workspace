@@ -24,5 +24,6 @@ jobs:
       - name: Compile Python modules
         run: python -m compileall -q workspace/capital_engine.py workspace/meta_orchestrator.py workspace/service.py tests/test_capital_engine.py tests/test_meta_orchestrator.py
       - name: Local ledger and policy tests (no network)
-        run: python -m unittest discover -s tests -p 'test_capital_engine.py' -v
+        run: |
+          python -m unittest discover -s tests -p 'test_capital_engine.py' -v
           python -m unittest discover -s tests -p 'test_meta_orchestrator.py' -v
